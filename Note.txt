@@ -1,0 +1,10 @@
+1. 搭建tomcat源码运行环境
+	准备工作：
+	1>. 配置正常java运行环境，jdk1.8
+	2>. 下载tomcat源码包(https://tomcat.apache.org/download-80.cgi)，apache-tomcat-8.5.31-src
+	3>. 所需额外jar包，algs4.jar   ant.jar  ecj-4.6.3.jar  jaxrpc.jar   wsdl4j-1.4.jar  junit-4.11.jar，自行到网上下载
+	4>. 建立普通java project --->  import --->  file---->apache-tomcat-8.5.31-src ,将所有包一起加入，
+	5>. 点击此项目的右键，将java 和 test变成源码包,并将6个额外包加入此项目
+	6>. test包中右错可以忽略，因为ie这里面是多java里面的各个类的测试
+	7>. 在java包中找org.apache.catalina.startup包下的Boostrap.java，点击右键运行即可
+	8>. 在浏览器中输入localhost:8080测试
